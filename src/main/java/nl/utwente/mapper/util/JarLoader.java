@@ -35,6 +35,14 @@ import java.util.jar.JarFile;
 
 public class JarLoader {
 
+    /**
+     * Loads the classes of the jar into a map. The keys of the map correspond to the name of the
+     * class, while the values correspond to the ClassNodes themselves.
+     *
+     * @param jar the File corresponding to the jar to load
+     * @return a map of all classes in the specified jar
+     * @throws IOException in case the file could not be loaded
+     */
     public static Map<String, ClassNode> readJar(File jar) throws IOException {
         Map<String, ClassNode> classes = new HashMap<>();
 
