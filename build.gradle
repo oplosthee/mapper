@@ -1,0 +1,17 @@
+group 'nl.utwente'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'com.google.guava:guava:25.1-jre'
+    compile 'org.ow2.asm:asm-debug-all:5.2'
+}
