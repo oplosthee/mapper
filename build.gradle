@@ -15,3 +15,8 @@ dependencies {
     compile 'com.google.guava:guava:25.1-jre'
     compile 'org.ow2.asm:asm-debug-all:5.2'
 }
+
+task start(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "nl.utwente.mapper.Main"
+}
